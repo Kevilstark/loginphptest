@@ -1,7 +1,7 @@
 <html>
 <body>
 
-<form action="control.php" method="post">
+<form action="controler.php" method="post">
 Name: <input type="text" name="name">
 Password: <input type="password" name="password">
 <input type="submit">
