@@ -45,7 +45,7 @@
             echo "chào mừng ".$_SESSION["username"];
         } else {
             echo "sai password"."<br />";
-            echo '<<a href="login.php">đăng nhập lại</button>';
+            echo '<a href="login.php">đăng nhập lại</button>';
         }
     } else {
         echo "sai username"."<br />";
