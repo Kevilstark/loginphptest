@@ -1,4 +1,5 @@
 <?php
+    session_start();
     $user = array(
         [
             'name' => 'admin',
@@ -38,11 +39,11 @@
             
         }
     }
+
     if ($checkuser) {
         if ($checkpass) {
             $_SESSION["username"] = $username;
-            echo "đăng nhập thành công"."<br />";
-            echo "chào mừng ".$_SESSION["username"];
+            header("location:home.php");
         } else {
             echo "sai password"."<br />";
             echo '<a href="login.php">đăng nhập lại</button>';
