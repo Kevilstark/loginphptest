@@ -40,8 +40,9 @@
     }
     if ($checkuser) {
         if ($checkpass) {
+            $_SESSION["username"] = $username;
             echo "đăng nhập thành công"."<br />";
-            echo "chào mừng ".$username;
+            echo "chào mừng ".$_SESSION["username"];
         } else {
             echo "sai password"."<br />";
             echo '<button name="button">đăng nhập lại</button>';
