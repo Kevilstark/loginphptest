@@ -50,7 +50,7 @@
         }
     } else {
         echo "sai username"."<br />";
-        echo '<a href="login.php">đăng nhập lại</button>';
+        echo '<a href="login.php">đăng nhập lại</a>';
     }
 
 ?>

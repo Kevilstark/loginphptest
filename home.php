@@ -4,7 +4,8 @@
 		header("location:login.php");
     } else {
         echo "đăng nhập thành công"."<br />";
-        echo "chào mừng ".$_SESSION["username"];
+        echo "chào mừng ".$_SESSION["username"]."<br />";
+        echo '<a href="logout.php">log out</a>';
     }
     
 ?>
