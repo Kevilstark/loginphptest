@@ -31,10 +31,11 @@
     foreach($user as $key=>$val) {
         if ($user[$key]['name'] == $username) {
             $checkuser = TRUE;
-            if ($user[$key]['password']) {
+            if ($user[$key]['password'] == $password) {
                 $checkpass = TRUE;
                 break;
             }
+            
         }
     }
     if ($checkuser) {
